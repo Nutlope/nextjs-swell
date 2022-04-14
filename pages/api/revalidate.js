@@ -4,6 +4,7 @@ export default async function handler(req, res) {
   }
 
   const { data } = JSON.parse(req.body)
+  console.log('data is: ', data)
   // Regenerate our index and product routes
   try {
     await res.unstable_revalidate('/')
