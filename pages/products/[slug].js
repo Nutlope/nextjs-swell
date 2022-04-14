@@ -59,8 +59,14 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
+  const swellProducts = await swell.products.list()
+  let fullPaths = []
+  for (let product of swellProducts) {
+    fullPaths.push({ params: { id: product.id } })
+  }
+
   return {
-    paths: [], // TODO: Get all these paths and put them on there (hardcoded for now then generate from Swell)
+    paths: fullPaths,
     fallback: 'blocking',
   }
 }
