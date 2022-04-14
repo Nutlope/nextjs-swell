@@ -1,9 +1,10 @@
 export default async function handler(req, res) {
-  if (req.query.secret !== process.env.REVALIDATE_SECRET) {
-    return res.status(401).json({ message: 'Invalid token' })
-  }
+  //   if (req.query.secret !== process.env.REVALIDATE_SECRET) {
+  //     return res.status(401).json({ message: 'Invalid token' })
+  //   }
   try {
     // Regenerate our index route showing the images
+    console.log('req is ', req)
     await res.unstable_revalidate('/')
     return res.json({ revalidated: true })
   } catch (err) {
