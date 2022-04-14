@@ -8,6 +8,7 @@ export default function Header({ scrollHandler }) {
         <div className="relative shadow-xl sm:overflow-hidden">
           <div className="absolute inset-0">
             <Image
+              priority
               layout="fill"
               className="h-full w-full object-cover"
               src="/hero.jpg"

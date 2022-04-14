@@ -41,12 +41,7 @@ export default function Product({ product }) {
             <div className="mt-10 mb-5 border-t border-gray-200 pt-10 font-bold">
               Description
             </div>
-            <p className="max-w-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              ea quod, minus numquam commodi consequuntur, nihil omnis vero
-              harum distinctio odit dicta accusantium recusandae fuga modi
-              corrupti mollitia id sunt?
-            </p>
+            <p className="max-w-xl">{product.description}</p>
           </div>
         </div>
       </div>
