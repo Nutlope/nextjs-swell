@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   // Regenerate our index and product routes
   try {
     await res.unstable_revalidate('/')
-    await res.unstable_revalidate(`/${data.id}`)
+    await res.unstable_revalidate(`/products/${data.id}`)
     return res.status(200).json({ revalidated: true })
   } catch (err) {
     return res.status(500).send('Error revalidating')
