@@ -1,6 +1,6 @@
 # Swell / Next.js App
 
-Learn how to create a headless ecommerce application using Swell and Next.js.
+Learn how to create a headless ecommerce application using Swell and Next.js
 
 ## Built With
 
