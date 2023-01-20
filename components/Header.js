@@ -9,7 +9,7 @@ export default function Header({ scrollHandler }) {
           <div className="absolute inset-0">
             <Image
               priority
-              layout="fill"
+              fill
               className="h-full w-full object-cover"
               src="/hero.jpg"
               alt="People working on laptops"
