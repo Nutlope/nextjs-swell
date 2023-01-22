@@ -6,7 +6,7 @@ export default function Layout({ children }) {
         <p>Powered by Next.js, Swell, and Vercel </p>
         <span>|</span>
         <a
-          href="https://github.com/Nutlope/swell-nextjs-demo"
+          href="https://github.com/Nutlope/nextjs-swell"
           className="font-medium text-orange-600"
         >
           Source code
